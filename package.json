@@ -1,0 +1,24 @@
+{
+  "name": "svg-manipulator",
+  "homepage": "https://hazemmuhammad96.github.io/SvgManipulator/",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HazemMuhammad96/SvgManipulator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/HazemMuhammad96/SvgManipulator/issues"
+  }
+}

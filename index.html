@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG ViewBox</title>
+    <style>
+        :root {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #viewBoxContainer {
+            width: 100%;
+            height: 93vh;
+            margin-top: 8px;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+        <label for="vbHieght">ViewBox Height:</label>
+        <input type="number" id="vbHieght" value="1170" step="1">
+    <div id="viewBoxContainer">
+        <svg id="svgViewBox" viewBox="0 0 1370 1170">
+            <rect x="0" y="0" width="50" height="50" />
+        </svg>
+    </div>
+
+    <script>
+        const width = 1370;
+        let height = 1170;
+
+        const vbHieght = document.getElementById('vbHieght').addEventListener('change', (e) => {
+            height = e.target.value;
+            document.getElementById('svgViewBox').setAttribute('viewBox', `0 0 ${width} ${height}`);
+        });
+
+    </script>
+</body>
+
+</html>
